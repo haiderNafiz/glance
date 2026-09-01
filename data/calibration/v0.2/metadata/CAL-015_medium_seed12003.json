@@ -1,0 +1,35 @@
+{
+  "case_id": "CAL-015",
+  "dataset_version": "calibration-v0.2",
+  "generation_type": "synthetic",
+  "model": "FLUX.2-klein-4B",
+  "prompt": "Photorealistic rear-view portrait of one adult person.\n\nHead, neck, upper torso, shoulders, upper back, and enough torso\nlandmarks must be visible to judge the endpoint of the hair.\n\nBoth shoulders must be clearly visible.\n\nNeutral natural posture.\n\nSimple uncluttered indoor background.\n\nNatural photographic lighting.\n\nRealistic individual hair strands.\n\nRealistic hair volume.\n\nRealistic hair silhouette.\n\nNatural-looking hair texture.\n\nHigh-detail natural photography.\n\nThe image is intended for visual taxonomy calibration.\n\nThe hair endpoint must be clearly visible.\n\nThe relationship between the hair endpoint and the anatomical\nlandmarks of the body must be visually judgeable.\n\nThe camera framing must preserve enough of the upper torso and\nback to determine whether the hair ends above, at, or below\nimportant body landmarks.\n\nMedium-brown wavy hair with natural subtle variation.\n\nDo not crop the shoulders.\n\nDo not crop the hair ends.\n\nDo not hide the hair behind clothing.\n\nDo not use an extreme camera angle.\n\nDo not use an extreme close-up.\n\nDo not create an illustration or painting.\n\nDo not add accessories that obscure the hair.\n\nDo not add text or annotations.\n\n\nIMPORTANT HAIR-LENGTH REQUIREMENT:\n\nTarget length taxonomy category: MEDIUM\n\nOperational landmark:\nBELOW_SHOULDER_ABOVE_UPPER_CHEST\n\n\nRequired visual relationship:\nhair extends clearly below the shoulder line but remains clearly above the upper-chest region; the shoulder and upper-chest landmarks must both be visible\n\n\nTaxonomy definition:\nHair extends clearly below the shoulder landmark but remains clearly above the upper-chest region.\n\n\nThe hair endpoint and its relationship to the visible anatomical\nlandmarks must be visually obvious enough for an independent\nhuman evaluator to determine the intended category from the\nimage alone.\n\nDo not exaggerate the hair length beyond the specified category.\n\nDo not allow the hair to cross into another length category.\n\nThe image must contain sufficient visible body landmarks for\nindependent human verification.\n\n\nillustration,\npainting,\ncartoon,\nanime,\nfantasy,\nmultiple people,\ncropped shoulders,\ncropped hair,\nhair hidden by clothing,\nhair obscured by accessories,\nextreme close-up,\nextreme camera angle,\nblurred hair,\nunrealistic hair,\nfloating hair,\nartificial hair,\ntext,\nlabels,\narrows,\nmeasurement lines,\ndiagram,\nwatermark",
+  "target_annotation": {
+    "length_category": "MEDIUM",
+    "length_landmark": "BELOW_SHOULDER_ABOVE_UPPER_CHEST",
+    "length_definition": "Hair extends clearly below the shoulder landmark but remains clearly above the upper-chest region.",
+    "haircut_structure": null
+  },
+  "generation": {
+    "seed": 12003,
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 4,
+    "guidance_scale": 4.0,
+    "generation_time_seconds": 166.67
+  },
+  "verification": {
+    "status": "PENDING",
+    "human_observed_length_category": null,
+    "human_observed_haircut_structure": null,
+    "human_confidence": null,
+    "acceptable": null,
+    "notes": null
+  },
+  "provenance": {
+    "created_at_utc": "2026-08-24T06:16:04.480022+00:00",
+    "python": "3.13.15",
+    "pytorch": "2.11.0+cu128"
+  },
+  "image_file": "images/CAL-015_medium_seed12003.png"
+}

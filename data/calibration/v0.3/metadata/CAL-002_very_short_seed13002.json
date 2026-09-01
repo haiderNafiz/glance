@@ -1,0 +1,36 @@
+{
+  "case_id": "CAL-002",
+  "dataset_version": "calibration-v0.3",
+  "generation_type": "synthetic",
+  "model": "FLUX.2-klein-4B",
+  "prompt": "Photorealistic rear-view portrait of one adult person.\n\nShow the back of the head and upper-to-full torso as required\nby the target hair-length category.\n\nThe person has naturally wavy hair with moderate, realistic\nhair density and natural individual strands.\n\nHair color is medium neutral brown and must remain consistent\nacross the dataset.\n\nHair texture is naturally wavy with moderate wave definition.\n\nNatural human anatomy.\n\nNatural head and neck proportions.\n\nNatural shoulder and back proportions.\n\nNeutral natural posture.\n\nBoth shoulders should be visible whenever required by the\ntarget composition.\n\nSimple uncluttered indoor background.\n\nNatural photographic lighting.\n\nRealistic individual hair strands.\n\nRealistic hair volume.\n\nRealistic hair silhouette.\n\nPhotorealistic high-detail photography.\n\nThe hairstyle must look physically attached to the person's\nhead and follow realistic hair growth and gravity.\n\nThe hair endpoint must be visually observable.\n\nThe anatomical landmarks needed to judge hair length must be\nclearly visible.\n\nDo not crop the relevant anatomical landmarks.\n\nDo not hide the hair endpoint behind clothing.\n\nDo not allow clothing to obscure the hair endpoint.\n\nDo not use an extreme camera angle.\n\nDo not create an illustration or painting.\n\nDo not include text, labels, arrows, measurement lines,\ndiagrams, or annotations.\n\n\n============================================================\nTARGET HAIR-LENGTH CATEGORY\n============================================================\n\nTarget taxonomy category:\n\nVERY_SHORT\n\nOperational anatomical landmark:\n\nABOVE_EAR\n\nHaircut structure:\n\nPIXIE_CROPPED\n\nRequired haircut structure:\n\nshort cropped pixie-like haircut with close sides and a compact hair silhouette\n\n============================================================\nANATOMICAL ENDPOINT CONSTRAINT\n============================================================\n\nThe lowest visible hair ends must remain clearly above the top or upper region of the ears.\n\nThe hair endpoint is the primary visual feature that must\ndistinguish this category.\n\nThe endpoint must be clearly visible.\n\nDo not interpret the category from hairstyle terminology alone.\n\nThe actual physical relationship between the hair endpoint\nand the person's anatomy must satisfy the definition.\n\n============================================================\nTAXONOMY DEFINITION\n============================================================\n\nHair remains very close to the head and terminates clearly above the ear region. No substantial hair mass extends toward the jawline.\n\n============================================================\nVISUAL PROMPT CONSTRAINT\n============================================================\n\nhair terminates clearly above the ears; no hair reaches the jawline\n\n============================================================\nCAMERA / COMPOSITION\n============================================================\n\nframe the head, ears, neck, and upper shoulders clearly; the ears must be fully visible\n\nThe composition must provide enough anatomical context for\nan independent human evaluator to determine the target\ncategory from the image alone.\n\n============================================================\nCONTROLLED VARIABLES\n============================================================\n\nKeep the following approximately constant across all cases:\n\n- adult person\n- medium neutral brown hair\n- naturally wavy texture\n- moderate realistic density\n- natural photographic lighting\n- simple indoor background\n- rear-view orientation\n\nOnly the target hair length, haircut structure, endpoint\nrelationship, and required framing should change.\n\n============================================================\nNEGATIVE CONSTRAINTS\n============================================================\n\n\n\nillustration,\npainting,\ncartoon,\nanime,\nfantasy,\nmultiple people,\nduplicate person,\n\ncropped head,\ncropped hair,\ncropped hair endpoint,\ncropped shoulders,\n\nhair hidden behind clothing,\nhair endpoint hidden,\n\nhair fused with clothing,\nhair fused with background,\n\nunrealistic hair,\nfloating hair,\ndetached hair,\nplastic hair,\nsynthetic-looking hair,\n\nextreme camera angle,\nextreme close-up,\n\nblurred hair,\nblurred anatomical landmarks,\n\ndistorted anatomy,\ndeformed shoulders,\ndeformed neck,\n\ntext,\ncaption,\nlabel,\narrow,\nmeasurement line,\ndiagram\n\n\nDo not add text, labels, arrows, measurement lines,\ndiagrams, or annotations to the image.",
+  "generation": {
+    "seed": 13002,
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 4,
+    "guidance_scale": 4.0,
+    "generation_time_seconds": 165.63
+  },
+  "target_annotation": {
+    "length_category": "VERY_SHORT",
+    "length_landmark": "ABOVE_EAR",
+    "definition": "Hair remains very close to the head and terminates clearly above the ear region. No substantial hair mass extends toward the jawline.",
+    "endpoint_anchor": "The lowest visible hair ends must remain clearly above the top or upper region of the ears.",
+    "haircut_structure": "PIXIE_CROPPED",
+    "haircut_structure_definition": "short cropped pixie-like haircut with close sides and a compact hair silhouette"
+  },
+  "verification": {
+    "status": "PENDING",
+    "human_observed_category": null,
+    "human_confidence": null,
+    "acceptable": null,
+    "notes": null
+  },
+  "provenance": {
+    "created_at_utc": "2026-08-26T12:37:10.634459+00:00",
+    "python": "3.13.15",
+    "pytorch": "2.11.0+cu128"
+  },
+  "image_file": "images/CAL-002_very_short_seed13002.png"
+}

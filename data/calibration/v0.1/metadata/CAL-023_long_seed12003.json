@@ -1,0 +1,33 @@
+{
+  "case_id": "CAL-023",
+  "dataset_version": "calibration-v0.1",
+  "generation_type": "synthetic",
+  "model": "FLUX.2-klein-4B",
+  "prompt": "Photorealistic rear-view portrait of an adult person,\nhead and upper torso visible,\nboth shoulders clearly visible,\nneutral natural posture,\nsimple uncluttered indoor background,\nnatural photographic lighting,\nrealistic individual hair strands,\nrealistic hair volume,\nrealistic hair silhouette,\nhigh-detail natural photography.\n\nThe camera must show enough of the upper torso that the relationship\nbetween the hair ends and the shoulders/chest/back can be visually judged.\n\nMedium brown wavy hair with natural subtle variation.\n\nDo not crop the shoulders.\nDo not crop the hair ends.\nDo not hide the hair behind clothing.\nDo not use an extreme camera angle.\nDo not create an illustration or painting.\n\n\nIMPORTANT HAIR-LENGTH REQUIREMENT:\n\nTarget taxonomy category: LONG\n\nOperational landmark:\nCHEST_OR_UPPER_BACK\n\nRequired visual relationship:\nhair extends clearly to the chest or upper-back region\n\nTaxonomy definition:\nHair extends to approximately chest level or upper back.\n\nThe hair-length relationship to the visible body landmarks must be\nvisually obvious enough for an independent human evaluator to determine\nthe category from the image alone.\n\nDo not add text, labels, arrows, measurement lines, diagrams,\nor annotations to the image.\n\n\nillustration, painting, cartoon, anime, fantasy,\ncropped shoulders, cropped hair,\nhair hidden by clothing,\nextreme close-up,\nextreme camera angle,\nblurred hair,\nunrealistic hair,\nfloating hair,\nmultiple people",
+  "generation": {
+    "seed": 12003,
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 4,
+    "guidance_scale": 4.0,
+    "generation_time_seconds": 170.82
+  },
+  "target_annotation": {
+    "length_category": "LONG",
+    "length_landmark": "CHEST_OR_UPPER_BACK",
+    "definition": "Hair extends to approximately chest level or upper back."
+  },
+  "verification": {
+    "status": "PENDING",
+    "human_observed_category": null,
+    "human_confidence": null,
+    "acceptable": null,
+    "notes": null
+  },
+  "provenance": {
+    "created_at_utc": "2026-08-23T05:41:08.931690+00:00",
+    "python": "3.13.15",
+    "pytorch": "2.11.0+cu128"
+  },
+  "image_file": "images/CAL-023_long_seed12003.png"
+}

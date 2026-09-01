@@ -1,0 +1,36 @@
+{
+  "case_id": "CAL-010",
+  "dataset_version": "calibration-v0.3",
+  "generation_type": "synthetic",
+  "model": "FLUX.2-klein-4B",
+  "prompt": "Photorealistic rear-view portrait of one adult person.\n\nShow the back of the head and upper-to-full torso as required\nby the target hair-length category.\n\nThe person has naturally wavy hair with moderate, realistic\nhair density and natural individual strands.\n\nHair color is medium neutral brown and must remain consistent\nacross the dataset.\n\nHair texture is naturally wavy with moderate wave definition.\n\nNatural human anatomy.\n\nNatural head and neck proportions.\n\nNatural shoulder and back proportions.\n\nNeutral natural posture.\n\nBoth shoulders should be visible whenever required by the\ntarget composition.\n\nSimple uncluttered indoor background.\n\nNatural photographic lighting.\n\nRealistic individual hair strands.\n\nRealistic hair volume.\n\nRealistic hair silhouette.\n\nPhotorealistic high-detail photography.\n\nThe hairstyle must look physically attached to the person's\nhead and follow realistic hair growth and gravity.\n\nThe hair endpoint must be visually observable.\n\nThe anatomical landmarks needed to judge hair length must be\nclearly visible.\n\nDo not crop the relevant anatomical landmarks.\n\nDo not hide the hair endpoint behind clothing.\n\nDo not allow clothing to obscure the hair endpoint.\n\nDo not use an extreme camera angle.\n\nDo not create an illustration or painting.\n\nDo not include text, labels, arrows, measurement lines,\ndiagrams, or annotations.\n\n\n============================================================\nTARGET HAIR-LENGTH CATEGORY\n============================================================\n\nTarget taxonomy category:\n\nSHOULDER\n\nOperational anatomical landmark:\n\nSHOULDER_LEVEL\n\nHaircut structure:\n\nSHOULDER_LENGTH_LOB\n\nRequired haircut structure:\n\nlong bob / lob structure with the main perimeter terminating around shoulder level\n\n============================================================\nANATOMICAL ENDPOINT CONSTRAINT\n============================================================\n\nThe majority of the hair ends must terminate at approximately the same vertical level as the shoulders.\n\nThe hair endpoint is the primary visual feature that must\ndistinguish this category.\n\nThe endpoint must be clearly visible.\n\nDo not interpret the category from hairstyle terminology alone.\n\nThe actual physical relationship between the hair endpoint\nand the person's anatomy must satisfy the definition.\n\n============================================================\nTAXONOMY DEFINITION\n============================================================\n\nHair terminates approximately at the shoulder line, with the ends visually aligned with the shoulders.\n\n============================================================\nVISUAL PROMPT CONSTRAINT\n============================================================\n\nhair ends align approximately exactly with the shoulder line; the endpoints visibly overlap the shoulder-level region\n\n============================================================\nCAMERA / COMPOSITION\n============================================================\n\nshow the full head, neck, both shoulders, and upper torso; the shoulder line must be clearly visible\n\nThe composition must provide enough anatomical context for\nan independent human evaluator to determine the target\ncategory from the image alone.\n\n============================================================\nCONTROLLED VARIABLES\n============================================================\n\nKeep the following approximately constant across all cases:\n\n- adult person\n- medium neutral brown hair\n- naturally wavy texture\n- moderate realistic density\n- natural photographic lighting\n- simple indoor background\n- rear-view orientation\n\nOnly the target hair length, haircut structure, endpoint\nrelationship, and required framing should change.\n\n============================================================\nNEGATIVE CONSTRAINTS\n============================================================\n\n\n\nillustration,\npainting,\ncartoon,\nanime,\nfantasy,\nmultiple people,\nduplicate person,\n\ncropped head,\ncropped hair,\ncropped hair endpoint,\ncropped shoulders,\n\nhair hidden behind clothing,\nhair endpoint hidden,\n\nhair fused with clothing,\nhair fused with background,\n\nunrealistic hair,\nfloating hair,\ndetached hair,\nplastic hair,\nsynthetic-looking hair,\n\nextreme camera angle,\nextreme close-up,\n\nblurred hair,\nblurred anatomical landmarks,\n\ndistorted anatomy,\ndeformed shoulders,\ndeformed neck,\n\ntext,\ncaption,\nlabel,\narrow,\nmeasurement line,\ndiagram\n\n\nDo not add text, labels, arrows, measurement lines,\ndiagrams, or annotations to the image.",
+  "generation": {
+    "seed": 13001,
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 4,
+    "guidance_scale": 4.0,
+    "generation_time_seconds": 165.17
+  },
+  "target_annotation": {
+    "length_category": "SHOULDER",
+    "length_landmark": "SHOULDER_LEVEL",
+    "definition": "Hair terminates approximately at the shoulder line, with the ends visually aligned with the shoulders.",
+    "endpoint_anchor": "The majority of the hair ends must terminate at approximately the same vertical level as the shoulders.",
+    "haircut_structure": "SHOULDER_LENGTH_LOB",
+    "haircut_structure_definition": "long bob / lob structure with the main perimeter terminating around shoulder level"
+  },
+  "verification": {
+    "status": "PENDING",
+    "human_observed_category": null,
+    "human_confidence": null,
+    "acceptable": null,
+    "notes": null
+  },
+  "provenance": {
+    "created_at_utc": "2026-08-26T12:59:21.247961+00:00",
+    "python": "3.13.15",
+    "pytorch": "2.11.0+cu128"
+  },
+  "image_file": "images/CAL-010_shoulder_seed13001.png"
+}

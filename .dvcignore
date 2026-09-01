@@ -1,0 +1,10 @@
+# DVC ignore rules
+.git
+.gitignore
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.tmp
+*.temp
+__pycache__
+*.pyc

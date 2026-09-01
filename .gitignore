@@ -1,0 +1,64 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# DVC / Image Binaries Safeguard
+# Raw images must be tracked exclusively by DVC pointer files (*.dvc)
+/data/**/images/
+/data/**/images/*
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+# Allow tracking images.dvc files
+!*.dvc
+# Allow markdown and text in data/
+!/data/**/*.md
+!/data/**/*.json
+!/data/**/*.yaml
+!/data/**/*.yml

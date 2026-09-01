@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "dataset_name": "glance_hair_perception_evaluation",
+  "dataset_version": "evaluation-v0.1",
+  "total_samples": 100,
+  "description": "Evaluation dataset template distinguishing generation targets from human-verified ground truth.",
+  "sample_template": {
+    "sample_id": "EVAL-001",
+    "dataset_version": "evaluation-v0.1",
+    "image_file": "images/EVAL-001_very_short_seed20001.png",
+    "generation_target": {
+      "target_taxonomy_category": "VERY_SHORT",
+      "target_landmark": "ABOVE_EAR",
+      "target_texture": "STRAIGHT",
+      "target_wave_pattern": "NONE",
+      "target_volume": "MEDIUM",
+      "target_density": "MEDIUM",
+      "target_color_family": "DARK_BROWN",
+      "target_haircut_structure": "PIXIE",
+      "prompt": "Photorealistic portrait...",
+      "negative_prompt": "cropped shoulders, blurred hair..."
+    },
+    "generation_parameters": {
+      "model": "FLUX.2-klein-4B",
+      "seed": 20001,
+      "width": 512,
+      "height": 512,
+      "num_inference_steps": 4,
+      "guidance_scale": 4.0,
+      "generation_time_seconds": 120.5
+    },
+    "ground_truth_annotation": {
+      "verified_by": "human_annotator_1",
+      "verified_at_utc": "2026-09-01T00:00:00Z",
+      "length_category": "VERY_SHORT",
+      "length_landmark": "ABOVE_EAR",
+      "texture": "STRAIGHT",
+      "wave_pattern": "NONE",
+      "apparent_volume": "MEDIUM",
+      "apparent_density": "MEDIUM",
+      "color_family": "DARK_BROWN",
+      "haircut_structure": "PIXIE",
+      "generation_target_matched": true,
+      "confidence_score": 1.0,
+      "notes": "Clear visual separation above upper ear landmark."
+    },
+    "provenance": {
+      "created_at_utc": "2026-09-01T00:00:00Z",
+      "python_version": "3.12.4",
+      "torch_version": "2.11.0+cu128"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "dataset": "glance_hair_perception_evaluation",
+  "dataset_version": "v0.1",
+  "case_id": "EVAL-066",
+  "generation_target": {
+    "feature": "hair_length",
+    "category": "VERY_LONG"
+  },
+  "generation": {
+    "model": "FLUX.2 [klein] 4B",
+    "seed": 23006,
+    "width": 512,
+    "height": 512,
+    "num_inference_steps": 4,
+    "guidance_scale": 4.0,
+    "generation_time_seconds": 166.89
+  },
+  "view_condition": {
+    "view": "rear",
+    "calibration_status": "calibrated"
+  },
+  "human_annotation": {
+    "observed_category": null,
+    "confidence": null,
+    "acceptable": null,
+    "notes": null
+  },
+  "prompt": "Photorealistic rear-view portrait of one adult person.\n\nShow the back of the head and upper-to-full torso as required\nby the target hair-length category.\n\nThe person has naturally wavy hair with moderate, realistic\nhair density and natural individual strands.\n\nHair color is medium neutral brown and must remain consistent\nacross the dataset.\n\nHair texture is naturally wavy with moderate wave definition.\n\nNatural human anatomy.\n\nNatural head and neck proportions.\n\nNatural shoulder and back proportions.\n\nNeutral natural posture.\n\nBoth shoulders should be visible whenever required by the\ntarget composition.\n\nSimple uncluttered indoor background.\n\nNatural photographic lighting.\n\nRealistic individual hair strands.\n\nRealistic hair volume.\n\nRealistic hair silhouette.\n\nPhotorealistic high-detail photography.\n\nThe hairstyle must look physically attached to the person's\nhead and follow realistic hair growth and gravity.\n\nThe hair endpoint must be visually observable.\n\nThe anatomical landmarks needed to judge hair length must be\nclearly visible.\n\nDo not crop the relevant anatomical landmarks.\n\nDo not hide the hair endpoint behind clothing.\n\nDo not allow clothing to obscure the hair endpoint.\n\nDo not use an extreme camera angle.\n\nDo not create an illustration or painting.\n\nDo not include text, labels, arrows, measurement lines,\ndiagrams, or annotations.\n\n\n============================================================\nTARGET HAIR-LENGTH CATEGORY\n============================================================\n\nTarget taxonomy category:\n\nVERY_LONG\n\nOperational anatomical landmark:\n\nBELOW_MID_BACK\n\nHaircut structure:\n\nVERY_LONG_LAYERED_CUT\n\nRequired haircut structure:\n\nvery long layered haircut with substantial continuous length extending far below the mid-back\n\n============================================================\nANATOMICAL ENDPOINT CONSTRAINT\n============================================================\n\nThe majority of the hair must visibly extend below the mid-back region, with the endpoint substantially lower than the chest or upper-back region.\n\nThe hair endpoint is the primary visual feature that must\ndistinguish this category.\n\nThe endpoint must be clearly visible.\n\nDo not interpret the category from hairstyle terminology alone.\n\nThe actual physical relationship between the hair endpoint\nand the person's anatomy must satisfy the definition.\n\n============================================================\nTAXONOMY DEFINITION\n============================================================\n\nHair extends substantially below the mid-back region.\n\n============================================================\nVISUAL PROMPT CONSTRAINT\n============================================================\n\nhair extends substantially below the mid-back region; hair visibly continues far down the back\n\n============================================================\nCAMERA / COMPOSITION\n============================================================\n\nuse a wider rear portrait showing the head, shoulders, full back, and substantially more torso so the hair endpoint below mid-back is visible\n\nThe composition must provide enough anatomical context for\nan independent human evaluator to determine the target\ncategory from the image alone.\n\n============================================================\nCONTROLLED VARIABLES\n============================================================\n\nKeep the following approximately constant across all cases:\n\n- adult person\n- medium neutral brown hair\n- naturally wavy texture\n- moderate realistic density\n- natural photographic lighting\n- simple indoor background\n- rear-view orientation\n\nOnly the target hair length, haircut structure, endpoint\nrelationship, and required framing should change.\n\n============================================================\nNEGATIVE CONSTRAINTS\n============================================================\n\n\n\nillustration,\npainting,\ncartoon,\nanime,\nfantasy,\nmultiple people,\nduplicate person,\n\ncropped head,\ncropped hair,\ncropped hair endpoint,\ncropped shoulders,\n\nhair hidden behind clothing,\nhair endpoint hidden,\n\nhair fused with clothing,\nhair fused with background,\n\nunrealistic hair,\nfloating hair,\ndetached hair,\nplastic hair,\nsynthetic-looking hair,\n\nextreme camera angle,\nextreme close-up,\n\nblurred hair,\nblurred anatomical landmarks,\n\ndistorted anatomy,\ndeformed shoulders,\ndeformed neck,\n\ntext,\ncaption,\nlabel,\narrow,\nmeasurement line,\ndiagram\n\n\nDo not add text, labels, arrows, measurement lines,\ndiagrams, or annotations to the image.",
+  "image_file": "images/EVAL-066.png"
+}

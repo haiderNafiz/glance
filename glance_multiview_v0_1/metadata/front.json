@@ -1,0 +1,8 @@
+{
+  "view": "front",
+  "angle_degrees": 0,
+  "generation_mode": "text_to_image",
+  "seed": 24001,
+  "prompt": "Photorealistic straight-on front view portrait of an adult person,\nhead and upper torso visible.\n\nMedium brown wavy hair with natural subtle variation.\n\nThe hairstyle should be clearly visible.\nNatural realistic individual hair strands.\nNatural photographic lighting.\nSimple uncluttered background.\n\nDo not crop the head.\nDo not crop the hairstyle.\nDo not use an extreme camera angle.\nDo not add text or annotations.",
+  "elapsed_seconds": 165.83646726608276
+}

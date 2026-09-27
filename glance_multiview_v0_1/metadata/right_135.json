@@ -1,0 +1,12 @@
+{
+  "view": "right_135",
+  "angle_degrees": 225,
+  "generation_mode": "multi_reference_conditioning",
+  "references": [
+    "front",
+    "right_90"
+  ],
+  "seed": 24008,
+  "prompt": "Generate a photorealistic view of the same adult person shown in\nthe reference image(s).\n\nPreserve the person's identity and preserve the hairstyle as closely\nas possible.\n\nPreserve:\n- hair length\n- haircut structure\n- hair texture\n- hair color\n- hair volume\n- hair density\n- overall hairstyle\n\nOnly change the camera viewpoint.\n\nDo not redesign, shorten, lengthen, recolor, straighten, curl,\nor otherwise modify the hairstyle.\n\nNatural photographic appearance.\nRealistic individual hair strands.\nNatural lighting.\nNo text.\nNo labels.\nNo annotations.\nNo collage.\nNo multiple people.\n\n\nTarget camera viewpoint:\nRight rear three-quarter view, approximately 135 degrees from frontal. The subject is facing substantially away from the camera. The back of the head and hairstyle dominate the image. Only a small portion of the right side of the face may be visible at the edge. The nose should not be prominently visible. The mouth should not be clearly visible. The front facial features should be mostly occluded. The hairstyle should be viewed primarily from the rear-right direction. Head, neck, and shoulders are aligned and face away from the camera. Do not turn the head toward the camera..\n\nThe target should appear as though the camera has moved around\nthe same person while the person and hairstyle remain unchanged.\n\nThe relationship between the hair and the head must remain\nanatomically plausible for this viewpoint.",
+  "elapsed_seconds": 179.36783576011658
+}
